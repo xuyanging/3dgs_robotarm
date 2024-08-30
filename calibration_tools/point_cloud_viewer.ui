@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PointCloudViewer</class>
+ <widget class="QMainWindow" name="PointCloudViewer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Point Cloud Viewer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="loadButton">
+      <property name="text">
+       <string>Load Point Cloud</string>
+      </property>
+     </widget>
+    </item>
+    
+    <!-- Rotation sliders and labels -->
+    <item>
+     <widget class="QSlider" name="yawSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="maximum">
+       <number>36000</number> <!-- Maximum value for yaw (0 to 360 degrees) -->
+      </property>
+      <property name="singleStep">
+       <number>1</number> <!-- Step size for yaw -->
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="yawLabel">
+      <property name="text">
+       <string>Yaw: 0.0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="pitchSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="maximum">
+       <number>36000</number> <!-- Maximum value for pitch (0 to 360 degrees) -->
+      </property>
+      <property name="singleStep">
+       <number>1</number> <!-- Step size for pitch -->
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="pitchLabel">
+      <property name="text">
+       <string>Pitch: 0.0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="rollSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="maximum">
+       <number>36000</number> <!-- Maximum value for roll (0 to 360 degrees) -->
+      </property>
+      <property name="singleStep">
+       <number>1</number> <!-- Step size for roll -->
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="rollLabel">
+      <property name="text">
+       <string>Roll: 0.0</string>
+      </property>
+     </widget>
+    </item>
+    
+    <!-- Translation sliders and labels -->
+    <item>
+     <widget class="QSlider" name="xTranslationSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="minimum">
+       <number>-1000</number> <!-- Minimum value for X translation -->
+      </property>
+      <property name="maximum">
+       <number>1000</number> <!-- Maximum value for X translation -->
+      </property>
+      <property name="singleStep">
+       <number>1</number> <!-- Step size for X translation -->
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="xTranslationLabel">
+      <property name="text">
+       <string>X Translation: 0.0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="yTranslationSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="minimum">
+       <number>-1000</number> <!-- Minimum value for Y translation -->
+      </property>
+      <property name="maximum">
+       <number>1000</number> <!-- Maximum value for Y translation -->
+      </property>
+      <property name="singleStep">
+       <number>1</number> <!-- Step size for Y translation -->
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="yTranslationLabel">
+      <property name="text">
+       <string>Y Translation: 0.0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="zTranslationSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="minimum">
+       <number>-1000</number> <!-- Minimum value for Z translation -->
+      </property>
+      <property name="maximum">
+       <number>1000</number> <!-- Maximum value for Z translation -->
+      </property>
+      <property name="singleStep">
+       <number>1</number> <!-- Step size for Z translation -->
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="zTranslationLabel">
+      <property name="text">
+       <string>Z Translation: 0.0</string>
+      </property>
+     </widget>
+    </item>
+    
+    <!-- Rotation matrix label -->
+    <item>
+     <widget class="QLabel" name="rotationMatrixLabel">
+      <property name="text">
+       <string>Rotation Matrix: [[1, 0, 0], [0, 1, 0], [0, 0, 1]]</string>
+      </property>
+     </widget>
+    </item>
+    
+    <!-- Translation matrix label -->
+    <item>
+     <widget class="QLabel" name="translationMatrixLabel">
+      <property name="text">
+       <string>Translation Vector: [0.0, 0.0, 0.0]</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

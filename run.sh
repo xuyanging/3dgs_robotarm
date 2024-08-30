@@ -1,0 +1,1 @@
+python3 3dgs_robotarm.py --model_path 6e03a0a9-4
