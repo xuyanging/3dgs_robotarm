@@ -1,1 +1,0 @@
-Namespace(sh_degree=3, source_path='/home/xuyang/gaussian-splatting/datasets/drjohnson', model_path='./output/a1f88c55-d', images='images', resolution=-1, white_background=False, data_device='cuda', eval=False, render_items=['RGB', 'Alpha', 'Normal', 'Depth', 'Edge', 'Curvature'])
