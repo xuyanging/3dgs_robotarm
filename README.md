@@ -7,7 +7,7 @@ bash run.sh
 ## GUI Display:
 After setting up the GUI, you can see the following interface:
 
-![GUI](Render Viewer 2024-08-28 16-24-52.gif)
+![GUI](render.gif)
 
 ## Pretrained Model
 
