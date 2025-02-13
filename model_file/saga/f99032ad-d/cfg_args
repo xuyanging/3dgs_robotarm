@@ -1,0 +1,1 @@
+Namespace(sh_degree=3, feature_dim=32, init_from_3dgs_pcd=False, source_path='/home/xuyang/SegAnyGAussians/datasets/public/360_v2/room', model_path='./output/f99032ad-d', feature_model_path='', images='images', resolution=-1, white_background=False, data_device='cuda', eval=False, need_features=False, need_masks=False, allow_principle_point_shift=False)

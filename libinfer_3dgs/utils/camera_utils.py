@@ -56,8 +56,6 @@ def cameraList_from_camInfos(cam_infos, resolution_scale, args):
 
     for id, c in enumerate(tqdm(cam_infos)):
         camera_list.append(loadCam(args, id, c, resolution_scale))
-        if id == 10:
-            break
     return camera_list
 
 def camera_to_JSON(id, camera : Camera):

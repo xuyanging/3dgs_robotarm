@@ -11,6 +11,7 @@
 
 import os
 import sys
+sys.path.append('/home/xuyang/3dgs_segment_demo/libinfer_3dgs')
 from PIL import Image
 from typing import NamedTuple
 from scene.colmap_loader import read_extrinsics_text, read_intrinsics_text, qvec2rotmat, \
@@ -152,7 +153,7 @@ def readColmapSceneInfo(path, images, eval, llffhold=8):
         train_cam_infos = cam_infos
         test_cam_infos = []
 
-    #nerf_normalization = getNerfppNorm(train_cam_infos)
+    nerf_normalization = getNerfppNorm(train_cam_infos)
 
     ply_path = os.path.join(path, "sparse/0/points3D.ply")
     bin_path = os.path.join(path, "sparse/0/points3D.bin")
@@ -170,9 +171,9 @@ def readColmapSceneInfo(path, images, eval, llffhold=8):
         pcd = None
 
     scene_info = SceneInfo(point_cloud=pcd,
-                           train_cameras=[],
-                           test_cameras=[],
-                           nerf_normalization={},
+                           train_cameras=train_cam_infos,
+                           test_cameras=test_cam_infos,
+                           nerf_normalization=nerf_normalization,
                            ply_path=ply_path)
     return scene_info
 
