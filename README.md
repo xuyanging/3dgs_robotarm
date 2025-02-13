@@ -46,7 +46,7 @@ After setting up the GUI, you can see the following interface:
 * Add FlashGS, improve fps 50% [3dgs_viewer_flashgs.py](3dgs_viewer_flashgs.py) compared with vanilla 3dgs [3dgs_viewer.py](3dgs_viewer.py)
 * Add item buttom in edit mode
 
-### 20241113
+### 20250213
 * Add rebot simulation 
 
 #### Instructions for use are given below
